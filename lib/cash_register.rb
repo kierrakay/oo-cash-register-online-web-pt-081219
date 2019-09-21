@@ -72,8 +72,8 @@ class CashRegister
     else
       @items << title
     end
-    @total += price*quantity
-    @last_transaction_amount = price*quantity
+    @total += price*quantity #total of all items cause it increments up
+    @last_transaction_amount = price*quantity # literal last price*quantity and gets overwritten every time this method is run
     @total
   end
 
